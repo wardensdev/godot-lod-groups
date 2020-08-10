@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://MonkeyLOD/LOD3.tres" type="ArrayMesh" id=1]
+[ext_resource path="res://MonkeyLOD/LOD0.tres" type="ArrayMesh" id=2]
+[ext_resource path="res://MonkeyLOD/LOD2.tres" type="ArrayMesh" id=3]
+[ext_resource path="res://MonkeyLOD/LOD1.tres" type="ArrayMesh" id=4]
+
+[node name="MonkeyLOD" type="Node3D"]
+script = null
+
+[node name="LOD0" type="MeshInstance3D" parent="."]
+mesh = ExtResource( 2 )
+material/0 = null
+script = null
+
+[node name="LOD1" type="MeshInstance3D" parent="."]
+visible = false
+mesh = ExtResource( 4 )
+material/0 = null
+script = null
+
+[node name="LOD2" type="MeshInstance3D" parent="."]
+visible = false
+mesh = ExtResource( 3 )
+material/0 = null
+script = null
+
+[node name="LOD3" type="MeshInstance3D" parent="."]
+visible = false
+mesh = ExtResource( 1 )
+material/0 = null
+script = null
